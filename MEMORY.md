@@ -1,0 +1,5 @@
+- [User role](user_role.md) — user is an ERP developer, working in this project's Vue/Java ERP codebase
+- [Project scope and stack](project_scope_and_stack.md) — only use work-vsc-2th (VS Code/Vue) + work-eclipse-2th (Eclipse/Java) + files/lib
+- [Frontend-backend mapping](frontend_backend_mapping.md) — which of the 5 Tomcat modules have Vue UIs; wallboard JSP app vs walb page are different screens; billing has no UI
+- [DB config reference](db_config_reference.md) — DB config lives in per-module globals-{DEV,TST,PRD}.properties; Oracle 19c only active; never store credentials; PRD is hard off-limits for auto connect/execute
+- [dcos shortcut](feedback_dcos_shortcut.md) — typing "dcos" = switch to /mnt/c/IW-DEV + apply ERP context (user_role, project_scope_and_stack)
