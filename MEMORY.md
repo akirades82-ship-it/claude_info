@@ -7,4 +7,5 @@
 - [Personal vs work separation](feedback_personal_vs_work_separation.md) — home PC also has personal tasks (docs, stock data); never mention/reference these during company (dcos) sessions
 - [Home ERP project goal](project_home_erp_goal.md) — seoju project = personal docs + stock data aggregation, reusing ERP-style real-time inquiry/data-mgmt screens as reference; not a company ERP clone
 - [Stock feature progress](project_stock_feature_progress.md) — seoju/stock schema (item, watchlist, price_daily) built in local Postgres; KIS Developers API + Java batch chosen; paused, study material goes in /mnt/c/project/stock
+- [Seoju auto-journal](feedback_seoju_auto_journal.md) — proactively write dated .txt notes on meaningful decisions/direction changes in the seoju project, without being asked each time
 - [Memory git backup](reference_memory_git_backup.md) — memory folder is git repo synced to GitHub claude_info repo; commit+push after edits
