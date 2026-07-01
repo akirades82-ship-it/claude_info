@@ -4,4 +4,5 @@
 - [DB config reference](db_config_reference.md) — DB config lives in per-module globals-{DEV,TST,PRD}.properties; Oracle 19c only active; never store credentials; PRD is hard off-limits for auto connect/execute
 - [dcos shortcut](feedback_dcos_shortcut.md) — typing "dcos" (COMPANY PC) = switch to /mnt/c/IW-DEV + apply ERP context
 - [seoju shortcut](feedback_seoju_shortcut.md) — typing "seoju" (HOME PC) = switch to /mnt/c/project/dev/erp + apply ERP context
+- [Personal vs work separation](feedback_personal_vs_work_separation.md) — home PC also has personal tasks (docs, stock data); never mention/reference these during company (dcos) sessions
 - [Memory git backup](reference_memory_git_backup.md) — memory folder is git repo synced to GitHub claude_info repo; commit+push after edits
