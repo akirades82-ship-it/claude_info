@@ -9,3 +9,4 @@
 - [Stock feature progress](project_stock_feature_progress.md) — seoju/stock schema (item, watchlist, price_daily) built in local Postgres; KIS Developers API + Java batch chosen; paused, study material goes in /mnt/c/project/stock
 - [Seoju auto-journal](feedback_seoju_auto_journal.md) — proactively write dated .txt notes on meaningful decisions/direction changes in the seoju project, without being asked each time
 - [Memory git backup](reference_memory_git_backup.md) — memory folder is git repo synced to GitHub claude_info repo; commit+push after edits
+- [Default email recipient](feedback_default_email_recipient.md) — "이메일 보내줘" with no recipient named defaults to akirades@naver.com
