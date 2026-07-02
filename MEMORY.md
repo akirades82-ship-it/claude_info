@@ -13,3 +13,4 @@
 - [cnct-ntrc-new-tab use_amt bug](project_cnct_ntrc_new_tab_use_amt_bug.md) — unfixed: saveData() saves stale custInfo.use_amt instead of live custInfo.ready_cash
 - [WSL environment ephemeral](project_wsl_environment_ephemeral.md) — was Claude-session-bound, now set up (2026-07-02) to auto-boot at Windows logon via systemd + Task Scheduler; verify before assuming it's live
 - [Stock screening goal](project_stock_screening_goal.md) — target: +10% within 15 trading days, backtest-validated only, user is a trading beginner relying on Claude to design the method
+- [Prefer startup catch-up over cron](feedback_prefer_startup_catchup_over_cron.md) — in this session-bound WSL env, use "catch up on startup" not fixed-time cron for periodic jobs
