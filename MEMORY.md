@@ -10,3 +10,4 @@
 - [Seoju auto-journal](feedback_seoju_auto_journal.md) — proactively write dated .txt notes on meaningful decisions/direction changes in the seoju project, without being asked each time
 - [Memory git backup](reference_memory_git_backup.md) — memory folder is git repo synced to GitHub claude_info repo; commit+push after edits
 - [Default email recipient](feedback_default_email_recipient.md) — "이메일 보내줘" with no recipient named defaults to akirades@naver.com
+- [cnct-ntrc-new-tab use_amt bug](project_cnct_ntrc_new_tab_use_amt_bug.md) — unfixed: saveData() saves stale custInfo.use_amt instead of live custInfo.ready_cash
