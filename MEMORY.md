@@ -11,4 +11,4 @@
 - [Memory git backup](reference_memory_git_backup.md) — memory folder is git repo synced to GitHub claude_info repo; auto-pulled via SessionStart hook, commit+push after edits
 - [Default email recipient](feedback_default_email_recipient.md) — "이메일 보내줘" with no recipient named defaults to akirades@naver.com
 - [cnct-ntrc-new-tab use_amt bug](project_cnct_ntrc_new_tab_use_amt_bug.md) — unfixed: saveData() saves stale custInfo.use_amt instead of live custInfo.ready_cash
-- [WSL environment ephemeral](project_wsl_environment_ephemeral.md) — this Linux env (incl. local seoju Postgres) only runs during a Claude session; batch/cron won't fire while disconnected
+- [WSL environment ephemeral](project_wsl_environment_ephemeral.md) — was Claude-session-bound, now set up (2026-07-02) to auto-boot at Windows logon via systemd + Task Scheduler; verify before assuming it's live
