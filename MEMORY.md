@@ -19,3 +19,4 @@
 - [Mangi gift mng popup](project_mangi_gift_mng_popup.md) — TB_MEMBER_MANGI_GIFT_MNG CRUD popup, 7 cols now (added READY_CASH/REFUND_DUE 2026-07-06); dup-check + gift_code search-popup + ORA-00904/SEQ fixes same day
 - [Trust explicit schema over inference](feedback_trust_explicit_user_schema_over_inference.md) — when user states a table's full column list explicitly, don't override it with inference from partial SQL error messages
 - [Scope memory answers by context](feedback_scope_memory_answers_by_context.md) — "last memory" etc. must be filtered to dcos vs seoju by content domain, not just picked by mtime
+- [Respond in Korean](feedback_respond_in_korean.md) — user writes in Korean, expects replies in Korean, not English
