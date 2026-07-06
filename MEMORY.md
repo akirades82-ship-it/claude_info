@@ -16,5 +16,5 @@
 - [Prefer startup catch-up over cron](feedback_prefer_startup_catchup_over_cron.md) — in this session-bound WSL env, use "catch up on startup" not fixed-time cron for periodic jobs
 - [Auto-proceed without blockers](feedback_auto_proceed_no_blocker.md) — don't ask "proceed?" between routine next-steps; only check in on real blockers/risky actions/ambiguous taste calls
 - [Incremental memory saves](feedback_incremental_memory_saves.md) — checkpoint progress/decisions to memory as work happens, not just at session end; sessions can disconnect unexpectedly
-- [Mangi gift mng popup](project_mangi_gift_mng_popup.md) — TB_MEMBER_MANGI_GIFT_MNG CRUD popup (only 5 real columns, no audit cols); gift_code search-popup added, ORA-00904/SEQ bugs fixed 2026-07-06
+- [Mangi gift mng popup](project_mangi_gift_mng_popup.md) — TB_MEMBER_MANGI_GIFT_MNG CRUD popup, 7 cols now (added READY_CASH/REFUND_DUE 2026-07-06); dup-check + gift_code search-popup + ORA-00904/SEQ fixes same day
 - [Trust explicit schema over inference](feedback_trust_explicit_user_schema_over_inference.md) — when user states a table's full column list explicitly, don't override it with inference from partial SQL error messages
