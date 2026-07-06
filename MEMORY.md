@@ -16,4 +16,4 @@
 - [Prefer startup catch-up over cron](feedback_prefer_startup_catchup_over_cron.md) — in this session-bound WSL env, use "catch up on startup" not fixed-time cron for periodic jobs
 - [Auto-proceed without blockers](feedback_auto_proceed_no_blocker.md) — don't ask "proceed?" between routine next-steps; only check in on real blockers/risky actions/ambiguous taste calls
 - [Incremental memory saves](feedback_incremental_memory_saves.md) — checkpoint progress/decisions to memory as work happens, not just at session end; sessions can disconnect unexpectedly
-- [Mangi gift mng popup](project_mangi_gift_mng_popup.md) — in-progress CRUD popup for TB_MEMBER_MANGI_GIFT_MNG; frontend mostly done, backend wiring status being checked
+- [Mangi gift mng popup](project_mangi_gift_mng_popup.md) — TB_MEMBER_MANGI_GIFT_MNG CRUD popup; confirmed fully wired frontend+backend as of 2026-07-06, no known open work

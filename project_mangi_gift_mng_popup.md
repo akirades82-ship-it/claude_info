@@ -1,6 +1,6 @@
 ---
 name: project-mangi-gift-mng-popup
-description: "In-progress dev on mangi-gift-mng-popup.vue (만기연장 상품매핑 관리, TB_MEMBER_MANGI_GIFT_MNG CRUD popup)"
+description: "mangi-gift-mng-popup.vue (만기연장 상품매핑 관리, TB_MEMBER_MANGI_GIFT_MNG CRUD popup) — confirmed fully wired end-to-end as of 2026-07-06"
 metadata: 
   node_type: memory
   type: project
@@ -18,6 +18,10 @@ Frontend calls these backend endpoints:
 - `/dlw/mangimng/deletegiftmng` (delete, uses BaseGrid mixin's built-in delete config)
 - `/dlw/pay/getMemberMangiGiftset` (dropdown source for active gift codes, called with `{gift_nm: '', ext_period: ''}` — unpaged full list)
 
-**Why:** Session got disconnected mid-work before this could be checkpointed; recovered by inspecting file mtime/contents directly since git isn't used in these project dirs.
+Backend (work-eclipse-2th, package `powerservice.business.dlw`) confirmed fully wired end-to-end, no gaps:
+- `giftmnglist`/`insertgiftmng`/`updategiftmng`/`deletegiftmng` → `DlwMangiMngController` → `DlwMangiMngServiceImpl` → `DlwMangiMngMapper` → `DlwMangiMngMap.xml`. Delete is a soft-delete (`DEL_FG='Y'` update, not a real DELETE). List query joins `TB_MEMBER_MANGI_GIFT_MNG` with `TB_MEMBER_MANGI_GIFTSET`.
+- `getMemberMangiGiftset` (dropdown source) → `DlwPayController` → `DlwPayServiceImpl` → `DlwPayMapper` → `DlwPayMap.xml`, `WHERE DEL_FG='N'` — reads the *related* `TB_MEMBER_MANGI_GIFTSET` table, not `TB_MEMBER_MANGI_GIFT_MNG` itself.
 
-**How to apply:** Next step was verifying/building the Java backend (work-eclipse-2th) — controller, service, DAO, MyBatis mapper XML — for the 5 endpoints above, and confirming table TB_MEMBER_MANGI_GIFT_MNG exists in Oracle. If resuming this work, check backend wiring status first before assuming it's done.
+**Why:** Session got disconnected mid-work before this could be checkpointed; recovered by inspecting file mtime/contents directly since git isn't used in these project dirs. Backend wiring was then verified via agent search on 2026-07-06.
+
+**How to apply:** This popup is done end-to-end (frontend + backend) as of 2026-07-06 — no known open work here. If asked to continue "만기연장 상품매핑" work, confirm with the user what remains (e.g. testing, a specific bug) rather than assuming basic CRUD is still unbuilt.
