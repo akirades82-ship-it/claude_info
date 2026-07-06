@@ -1,6 +1,6 @@
 ---
 name: project-cnct-ntrc-new-tab-use-amt-bug
-description: "Known unfixed bug in cnct-ntrc-new-tab.vue saveData()/setSaveParam(): shopping_use_amt saved from stale custInfo.use_amt instead of live-refreshed custInfo.ready_cash"
+description: "FIXED (confirmed 2026-07-06): cnct-ntrc-new-tab.vue saveData()/setSaveParam() now reference custInfo.ready_cash instead of stale custInfo.use_amt"
 metadata: 
   node_type: memory
   type: project
@@ -19,4 +19,4 @@ Older sibling file `cnct-rgsn-tab.vue:732` does this correctly, referencing `oCu
 
 **Why:** Found while investigating a user-reported error in how `saveData()`'s referenced values relate to the `getReceiptAccntNewInfo` MyBatis query (`DlwResnReceiptMap.xml`). The query itself and most `custInfo` fields line up fine; this `use_amt`/`ready_cash` desync was the one real defect, and it's a staleness bug (multiple async populators of the same store object), not a param-name mismatch.
 
-**How to apply:** As of 2026-07-02, the fix (replace `oCustInfo.use_amt` with `oCustInfo.ready_cash` at lines 816 and 1001 of `cnct-ntrc-new-tab.vue`) had been proposed but not yet applied. If asked about this bug again, check whether the fix has already landed (git blame / read the current file) before re-investigating from scratch. More generally: in this popup family, `cnctStore.custInfo` is populated by multiple independent async calls (initial tab load + per-tab refresh buttons), so duplicate/derived fields can silently go out of sync — worth checking for this pattern in similar bug reports involving `cnctStore.custInfo`.
+**How to apply:** Confirmed fixed as of 2026-07-06 — current file has `oCustInfo.ready_cash` at (now-shifted) lines 810 and 995 of `cnct-ntrc-new-tab.vue`. No further action needed on this specific bug. More generally: in this popup family, `cnctStore.custInfo` is populated by multiple independent async calls (initial tab load + per-tab refresh buttons), so duplicate/derived fields can silently go out of sync — worth checking for this pattern in similar bug reports involving `cnctStore.custInfo`.
