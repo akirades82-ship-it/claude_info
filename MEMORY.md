@@ -12,7 +12,7 @@
 - [Default email recipient](feedback_default_email_recipient.md) — "이메일 보내줘" with no recipient named defaults to akirades@naver.com
 - [cnct-ntrc-new-tab use_amt bug](project_cnct_ntrc_new_tab_use_amt_bug.md) — FIXED (confirmed 2026-07-06): now reads custInfo.ready_cash instead of stale use_amt
 - [WSL environment ephemeral](project_wsl_environment_ephemeral.md) — was Claude-session-bound, now set up (2026-07-02) to auto-boot at Windows logon via systemd + Task Scheduler; verify before assuming it's live
-- [Stock screening goal](project_stock_screening_goal.md) — target: +10% within 15 trading days, backtest-validated only, user is a trading beginner relying on Claude to design the method
+- [Stock screening goal](project_stock_screening_goal.md) — target: +15% within 15 trading days, backtest-validated only; 2026-07-07 stop-loss bug fixes lowered EV, KOSPI edge now negative (KOSDAQ carries it)
 - [Prefer startup catch-up over cron](feedback_prefer_startup_catchup_over_cron.md) — in this session-bound WSL env, use "catch up on startup" not fixed-time cron for periodic jobs
 - [Auto-proceed without blockers](feedback_auto_proceed_no_blocker.md) — don't ask "proceed?" between routine next-steps; only check in on real blockers/risky actions/ambiguous taste calls
 - [Incremental memory saves](feedback_incremental_memory_saves.md) — checkpoint progress/decisions to memory as work happens, not just at session end; sessions can disconnect unexpectedly
