@@ -21,4 +21,4 @@
 - [Scope memory answers by context](feedback_scope_memory_answers_by_context.md) — "last memory" etc. must be filtered to dcos vs seoju by content domain, not just picked by mtime
 - [Respond in Korean](feedback_respond_in_korean.md) — user writes in Korean, expects replies in Korean, not English
 - [Backtest before verbal risk claims](feedback_backtest_before_verbal_risk_claims.md) — in seoju stock project, don't voice unbacked risk/caution commentary that contradicts the tool's own ranking
-- [webtoon shortcut](feedback_webtoon_shortcut.md) — typing "webtoon" (HOME PC) = switch to /mnt/c/project/webtoon, a new separate personal project (not ERP/stock)
+- [webtoon shortcut](feedback_webtoon_shortcut.md) — typing "webtoon" (HOME PC) = /mnt/c/project/webtoon; memory kept in SEPARATE repo claude_info_webtoon, see file for path
