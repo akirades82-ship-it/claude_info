@@ -1,11 +1,13 @@
 ---
 name: project-daytrading-pivot
-description: "2026-07-14: seoju stock project pivoted from swing (15-day/+15%) to day-trading (단타, next-day intraday ~5% target) after the swing observation sample came back 6 STOPPED / 0 HIT; auto order execution explicitly left UNDECIDED, not approved"
+description: "2026-07-14: seoju stock project pivoted swing→day-trading, then CLOSED same day after day-trading also failed to show a trustworthy edge. Trading automation (swing and day-trading both) is over; do not resume without the user explicitly reopening it."
 metadata: 
   node_type: memory
   type: project
   originSessionId: eaadd277-09e4-4c0e-a984-73f1b647fa1a
 ---
+
+**PROJECT CLOSED (2026-07-14, same day as the pivot).** After day-trading also failed to show a trustworthy edge (see below) and the user separately shared a past altcoin bot (-50% loss, same structural failure pattern — bought into confirmed downtrends, no regime/correlation control), the user explicitly decided to stop: "그냥 접자." Both swing and day-trading automation are done — infra/data/code left in place for reference, but **do not proactively resume or suggest continuing this thread** unless the user explicitly brings trading back up themselves. Full rationale: `/mnt/c/project/stock/20260714_224328_trading_project_closed.txt`.
 
 Confirmed 2026-07-14, right after finalizing the swing observation-mode sample: [[project_stock_screening_goal]]'s 07-06~07-13 코스닥 라이브 신호 8건이 STOPPED 6 / PENDING 2 / **HIT 0**으로 마감됐고, 그 직후 사용자가 방향 전환을 제안했다.
 

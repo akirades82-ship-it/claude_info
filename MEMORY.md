@@ -22,4 +22,4 @@
 - [Respond in Korean](feedback_respond_in_korean.md) — user writes in Korean, expects replies in Korean, not English
 - [Backtest before verbal risk claims](feedback_backtest_before_verbal_risk_claims.md) — in seoju stock project, don't voice unbacked risk/caution commentary that contradicts the tool's own ranking
 - [webtoon shortcut](feedback_webtoon_shortcut.md) — typing "webtoon" (HOME PC) = /mnt/c/project/webtoon; memory kept in SEPARATE repo claude_info_webtoon, see file for path
-- [Daytrading pivot](project_daytrading_pivot.md) — 2026-07-14: swing paused→단타; fee 0.147%/side+0.20% sell tax confirmed; auto order execution UNDECIDED, not approved
+- [Daytrading pivot](project_daytrading_pivot.md) — CLOSED 2026-07-14: swing→단타 pivot then both shut down (no trustworthy edge found); don't resume unless user reopens it
